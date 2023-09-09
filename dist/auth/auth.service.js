@@ -41,6 +41,7 @@ let AuthService = class AuthService {
     async register(createUserDto) {
         const userCreated = await this.userService.create(createUserDto);
         const userId = await this.userModel.findOne({ email: userCreated.email }).select("id");
+        console.log(1);
         return {
             user: userCreated,
             token: this.getJwtToken({ id: String(userId) })
