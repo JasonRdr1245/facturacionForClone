@@ -19,7 +19,7 @@ export class DetailService {
       throw new BadRequestException("no existe ese producto")
     }
     const {unitPrice,igvIndicator,igv,...rest}=productObject;
-    const igvImportDetail= igvIndicator? unitPrice*amount*igv/100 : 0 ;
+    const igvImportDetail= igvIndicator? unitPrice*amount*igv/(100+igv) : 0 ;
     const newDetail=new this.detailModel({product:productObject,
       amount,
       totalPrice: amount*unitPrice,
