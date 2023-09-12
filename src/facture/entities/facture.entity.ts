@@ -33,6 +33,8 @@ export class Facture {
     pay: Pay[];
     @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Client' })
     client:Client;
+    @Prop()
+    date: Date;
 }
 
 export const FactureSchema = SchemaFactory.createForClass(Facture)

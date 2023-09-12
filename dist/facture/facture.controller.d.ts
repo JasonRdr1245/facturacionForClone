@@ -51,6 +51,7 @@ export declare class FactureController {
         amountPayments: number;
         payMethod: string;
         pay: import("../pay/entities/pay.entity").Pay[];
+        date: Date;
     }>;
     findAll(): string;
     findOne(id: string): string;

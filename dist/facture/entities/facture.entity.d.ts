@@ -18,6 +18,7 @@ export declare class Facture {
     company: Company;
     pay: Pay[];
     client: Client;
+    date: Date;
 }
 export declare const FactureSchema: mongoose.Schema<Facture, mongoose.Model<Facture, any, any, any, mongoose.Document<unknown, any, Facture> & Facture & Required<{
     _id: string;

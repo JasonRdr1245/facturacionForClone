@@ -71,7 +71,8 @@ export class FactureService {
         totalIgv,
         totalPrice,
         user: userObject._id,
-        client:_id
+        client:_id,
+        date: new Date()
       })
 
       if (createFactureDto.payMethod) {

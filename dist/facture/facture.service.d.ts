@@ -61,6 +61,7 @@ export declare class FactureService {
         amountPayments: number;
         payMethod: string;
         pay: import("../pay/entities/pay.entity").Pay[];
+        date: Date;
     }>;
     findAll(): string;
     findOne(id: number): string;
@@ -77,5 +78,6 @@ export declare class FactureService {
         payMethod: string;
         user: User;
         pay: import("../pay/entities/pay.entity").Pay[];
+        date: Date;
     };
 }

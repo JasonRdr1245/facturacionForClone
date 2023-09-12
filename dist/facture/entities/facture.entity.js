@@ -66,6 +66,10 @@ __decorate([
     (0, mongoose_1.Prop)({ type: mongoose_2.default.Schema.Types.ObjectId, ref: 'Client' }),
     __metadata("design:type", client_entity_1.Client)
 ], Facture.prototype, "client", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", Date)
+], Facture.prototype, "date", void 0);
 exports.Facture = Facture = __decorate([
     (0, mongoose_1.Schema)()
 ], Facture);
